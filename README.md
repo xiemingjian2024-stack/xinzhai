@@ -8,21 +8,21 @@
 
 以下截图沿用作品集中的实际应用展示。首页与经阁随所选经文更换图景，修习时回到暖纸与文字。
 
-| 首页 · 三种修习入口 | 经阁 · 选择常卷 | 功果 · 收藏与积累 |
-| --- | --- | --- |
-| <img src="docs/images/home.jpg" alt="冰心诀首页与三个修习入口" width="240"> | <img src="docs/images/library.jpg" alt="经阁选经界面" width="240"> | <img src="docs/images/merit.jpg" alt="功果物件列表，统计为演示数据" width="240"> |
+| 首页 · 三种修习入口 | 诵持 · 随句前行 | 临经 · 纸上书写与留影 | 默录 · 逐字输入 |
+| --- | --- | --- | --- |
+| <img src="docs/images/user-home.png.webp" alt="作品集当前版本：首页真机截图" width="200"> | <img src="docs/images/user-recite.png.webp" alt="作品集当前版本：诵持真机截图" width="200"> | <img src="docs/images/user-copy.png.webp" alt="作品集当前版本：临经真机截图" width="200"> | <img src="docs/images/user-type.png.webp" alt="作品集当前版本：默录真机截图" width="200"> |
 
-### 三种修习方式
+### 完整界面展示
 
-| 诵持 · 随句前行 | 临经 · 纸上书写与留影 | 默录 · 逐字输入 |
-| --- | --- | --- |
-| <img src="docs/images/recite.jpg" alt="诵持逐句阅读界面" width="240"> | <img src="docs/images/copy.jpg" alt="临经与照片留存界面" width="240"> | <img src="docs/images/type.jpg" alt="默录输入界面" width="240"> |
+与作品集使用同一张完整界面长图，展示选经、修习、录经、焚经和功果的连续体验。点击图片可查看大图。
+
+![心斋作品集当前版本完整界面展示](docs/images/final-gallery.jpg.webp)
 
 ### 焚经 · 念头通达
 
-完成修习后，长按触发焚经，经过燃烧与过渡，最终回到“念头通达”。下面是应用使用的燃烧镜头，点击图片可查看视频素材；完整交互可按下方安装步骤体验。
+完成修习后，长按触发焚经，经过燃烧与过渡，最终回到“念头通达”。完整完成仪式可在作品集或本地可交互版本中体验。
 
-[![焚经仪式的燃烧镜头](public/assets/ritual/scripture-burning-scene.webp)](https://github.com/xiemingjian2024-stack/xinzhai/blob/main/public/assets/ritual/scripture-burning.mp4)
+
 
 ### 功果 · 让投入留下形状
 
