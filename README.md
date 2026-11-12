@@ -1,6 +1,38 @@
 # 心斋 · Xinzhai
 
+![心斋：云山、经册与一缕香烟](docs/images/cover-mist-calligraphy-v1.png)
+
 诵一卷经，留一刻静。面向 iPhone 的经文修习交互原型，包含经阁、诵持、临经、默录、功果与焚经完成仪式。
+
+## 界面一览
+
+以下截图沿用作品集中的实际应用展示。首页与经阁随所选经文更换图景，修习时回到暖纸与文字。
+
+| 首页 · 三种修习入口 | 经阁 · 选择常卷 | 功果 · 收藏与积累 |
+| --- | --- | --- |
+| <img src="docs/images/home.jpg" alt="冰心诀首页与三个修习入口" width="240"> | <img src="docs/images/library.jpg" alt="经阁选经界面" width="240"> | <img src="docs/images/merit.jpg" alt="功果物件列表，统计为演示数据" width="240"> |
+
+### 三种修习方式
+
+| 诵持 · 随句前行 | 临经 · 纸上书写与留影 | 默录 · 逐字输入 |
+| --- | --- | --- |
+| <img src="docs/images/recite.jpg" alt="诵持逐句阅读界面" width="240"> | <img src="docs/images/copy.jpg" alt="临经与照片留存界面" width="240"> | <img src="docs/images/type.jpg" alt="默录输入界面" width="240"> |
+
+### 焚经 · 念头通达
+
+完成修习后，长按触发焚经，经过燃烧与过渡，最终回到“念头通达”。下面是应用使用的燃烧镜头，点击图片可查看视频素材；完整交互可按下方安装步骤体验。
+
+[![焚经仪式的燃烧镜头](public/assets/ritual/scripture-burning-scene.webp)](https://github.com/xiemingjian2024-stack/xinzhai/blob/main/public/assets/ritual/scripture-burning.mp4)
+
+### 功果 · 让投入留下形状
+
+以珠串、玉佩等物件回应累计投入，采用完整展示的轮廓和克制的色彩。解锁状态与时间统计目前为原型演示。
+
+<p align="center">
+  <img src="public/assets/achievements/v4/lotus-beads-square.png" alt="心莲初放：珠串功果" width="220">
+  <img src="public/assets/achievements/v4/clarity-amber-square.png" alt="念头通达：琥珀功果" width="220">
+  <img src="public/assets/achievements/v4/clear-heart-jade-square.png" alt="澄怀观道：玉佩功果" width="220">
+</p>
 
 ## 项目介绍
 
