@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=ZCOOL+XiaoWei&display=swap");
+
+:root {
+  --ink: #17332c;
+  --muted: #60736a;
+  --paper: #f7f4e9;
+  --jade: #365e50;
+  --warm-ink: #513c2c;
+  --line: rgba(35, 66, 56, .15);
+}
+
+button, textarea, input { font: inherit; }
+button { color: inherit; }
+.keyboard-dock[data-visible="false"] { display: none; }
+.jingge-root, .screen-layer { position: absolute; inset: 0; overflow: hidden; }
+.jingge-root { font-family: "Noto Serif SC", "Songti SC", serif; color: var(--ink); background: var(--paper); }
+.app-screen, .page-scroll, .practice-body-scroll { height: 100%; background: transparent; }
+.home-screen .mobile-scroll-content { min-height: 100%; }
+
+.home-content { position: relative; isolation: isolate; min-height: 100%; box-sizing: border-box; overflow: hidden; padding: 62px 27px calc(var(--mobile-safe-area-height) + 26px); display: flex; flex-direction: column; }
+.home-backdrop { position: absolute; z-index: -1; inset: 0; background-position: center; background-size: cover; background-repeat: no-repeat; transform-origin: center 58%; will-change: transform, opacity; }
+.home-nav { display: flex; align-items: center; justify-content: space-between; }
+.wordmark, .merit-link { border: 0; background: transparent; padding: 5px 0; color: rgba(23, 51, 44, .78); font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 18px; letter-spacing: .28em; text-indent: .28em; cursor: pointer; }
+.hero-copy { margin-top: 202px; text-align: center; text-shadow: 0 1px 16px rgba(250, 248, 229, .92); }
+.eyebrow { margin: 0 0 13px; color: var(--muted); font-size: 9px; letter-spacing: .42em; }
+.hero-copy h1 { margin: 0; font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 49px; font-weight: 400; letter-spacing: .17em; text-indent: .17em; }
+.sutra-subtitle { margin: 17px 0 0; font-size: 14px; letter-spacing: .1em; }
+.sutra-excerpt { width: 278px; margin: 14px auto 0; color: rgba(23,51,44,.73); font-size: 10px; line-height: 2; letter-spacing: .07em; }
+.mode-entry { margin-top: auto; margin-bottom: 28px; padding-top: 170px; display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; }
+.mode-entry button { position: relative; min-height: 65px; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; cursor: pointer; }
+.mode-entry button + button::before { content: ""; position: absolute; left: 0; top: 18px; width: 1px; height: 28px; background: rgba(23,51,44,.25); }
+.mode-entry strong { font-family: "ZCOOL XiaoWei", serif; font-size: 22px; font-weight: 400; letter-spacing: .14em; text-indent: .14em; }
+.mode-entry small { color: var(--muted); font-size: 8px; letter-spacing: .12em; }
+
+.page-header, .practice-header { position: absolute; z-index: 5; top: 0; left: 0; right: 0; height: 108px; padding: 53px 21px 12px; display: grid; grid-template-columns: 42px 1fr 42px; align-items: center; background: rgba(247,244,233,.92); border-bottom: 1px solid rgba(35,66,56,.08); backdrop-filter: blur(12px); }
+.page-header button, .practice-header button { width: 38px; height: 38px; border: 0; background: transparent; display: grid; place-items: center; cursor: pointer; }
+.page-header > div, .practice-header > div { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.page-header small, .practice-header small { color: var(--muted); font-size: 8px; letter-spacing: .2em; }
+.page-header strong, .practice-header strong { font-family: "ZCOOL XiaoWei", serif; font-size: 19px; font-weight: 400; letter-spacing: .18em; text-indent: .18em; }
+.page-header > span { width: 38px; }
+.practice-header > span { text-align: right; font-size: 10px; font-variant-numeric: tabular-nums; }
+
+.library-screen { isolation: isolate; background: #d9d5c3; color: #f7f0dc; }
+.library-backdrop { position: absolute; z-index: -2; inset: 0; background-position: center; background-size: cover; will-change: opacity, transform; }
+.library-screen::after { content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none; background: rgba(10,18,15,.26); box-shadow: inset 0 -420px 170px -130px rgba(6,12,10,.72); }
+.library-header { position: absolute; z-index: 5; top: 0; left: 0; right: 0; padding: 62px 27px 10px; display: flex; align-items: center; justify-content: space-between; }
+.library-header button { border: 0; background: transparent; padding: 5px 0; color: rgba(255,255,255,.92); font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 18px; letter-spacing: .28em; text-indent: .28em; text-shadow: none; cursor: pointer; }
+.library-gallery { position: absolute; left: 0; right: 0; bottom: 112px; }
+.library-copy { padding: 0 29px 22px; text-shadow: 0 2px 14px rgba(0,0,0,.42); display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.library-copy h1 { width: 100%; margin: 0; font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 32px; font-weight: 400; letter-spacing: .15em; text-indent: 0; text-align: left; }
+.library-copy p { width: 100%; max-width: 310px; min-height: 43px; margin: 12px 0 18px; color: rgba(250,246,230,.8); font-size: 11px; line-height: 1.9; letter-spacing: .06em; text-indent: 0; text-align: left; }
+.library-copy > button { display: block; min-width: 0; height: auto; margin: 0; padding: 2px 0; border: 0; background: transparent; color: #fbf3d8; font-family: "ZCOOL XiaoWei", serif; font-size: 15px; letter-spacing: .16em; text-indent: 0; text-align: left; cursor: pointer; }
+.scripture-carousel { width: 100%; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x proximity; scroll-padding-inline: 29px; scrollbar-width: none; touch-action: none; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
+.scripture-carousel-track { gap: 12px; padding: 3px 29px 0; }
+.scripture-carousel::-webkit-scrollbar { display: none; }
+.scripture-carousel-track > button { position: relative; flex: 0 0 78px; width: 78px; height: 104px; padding: 0; overflow: hidden; border: 1px solid rgba(247,240,218,.24); border-radius: 5px; background: rgba(240,235,216,.14); color: #101a17; scroll-snap-align: start; cursor: pointer; transition: border-color .25s, transform .25s, opacity .25s; }
+.scripture-carousel-track > button:not(.selected) { opacity: .7; }
+.scripture-carousel-track > button.selected { border-color: #e4c883; box-shadow: 0 0 0 2px rgba(228,200,131,.22); transform: translateY(-3px); opacity: 1; }
+.scripture-carousel img { width: 100%; height: 100%; object-fit: cover; }
+.scripture-carousel-track > button > span { position: absolute; inset: 0; padding: 6px; background: transparent; color: rgba(13,23,20,.9); font-family: "ZCOOL XiaoWei", serif; font-size: 13px; letter-spacing: .08em; display: grid; place-items: center; }
+.scripture-carousel .carousel-create { border-style: dashed; display: grid; place-items: center; }
+.scripture-carousel .carousel-create > span { position: static; padding: 0; background: none; font-size: 14px; }
+
+.achievements-screen { background: var(--paper); }
+.achievements-floating-header, .achievement-detail-floating-header { position: absolute; z-index: 7; top: 0; left: 0; right: 0; height: 108px; padding: 62px 27px 10px; display: flex; align-items: flex-start; pointer-events: none; }
+.achievements-floating-header::before, .achievement-detail-floating-header::before { content: ""; position: absolute; z-index: -1; inset: 0; background: rgba(247,241,223,.9); border-bottom: 1px solid rgba(35,66,56,.07); backdrop-filter: blur(12px); opacity: 0; transition: opacity .28s ease; }
+.achievements-floating-header.is-scrolled::before { opacity: 1; }
+.achievements-floating-header button, .achievement-detail-floating-header button { pointer-events: auto; border: 0; background: transparent; padding: 5px 0; color: rgba(23,51,44,.82); font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 18px; letter-spacing: .28em; text-indent: .28em; cursor: pointer; }
+.achievements-content { min-height: 100%; padding: 106px 18px calc(var(--mobile-safe-area-height) + 42px); background: #f7f1df; }
+.merit-summary { padding: 7px 12px 20px; text-align: center; display: flex; flex-direction: column; gap: 5px; }
+.merit-summary p { margin: 0; color: var(--muted); font-size: 9px; letter-spacing: .18em; }
+.merit-summary strong { font-family: "ZCOOL XiaoWei", serif; font-size: 31px; font-weight: 400; letter-spacing: .08em; }
+.merit-summary span { color: var(--muted); font-size: 9px; }
+.achievement-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 31px 14px; }
+.achievement-item { min-width: 0; padding: 0; border: 0; background: transparent; text-align: center; display: flex; flex-direction: column; align-items: center; cursor: pointer; }
+.achievement-art { width: 100%; aspect-ratio: 1; background: transparent; display: grid; place-items: center; overflow: visible; }
+.achievement-art img { display: block; width: 94%; height: 94%; object-fit: contain; filter: drop-shadow(0 11px 9px rgba(73,52,23,.18)); transition: filter .25s, opacity .25s, transform .2s; }
+.achievement-item:active .achievement-art img { transform: scale(.96); }
+.achievement-item strong { margin-top: 10px; font-family: "ZCOOL XiaoWei", serif; font-size: 17px; font-weight: 400; letter-spacing: .12em; text-indent: .12em; }
+.achievement-item small { min-height: 26px; margin-top: 5px; color: var(--muted); font-size: 8px; line-height: 1.6; }
+.achievement-item.locked .achievement-art { background: transparent; }
+.achievement-item.locked img { filter: grayscale(1) contrast(.82) drop-shadow(0 8px 7px rgba(55,55,50,.12)); opacity: .32; }
+.achievement-item.locked strong, .achievement-item.locked small { color: rgba(57,55,50,.43); }
+
+.achievement-detail-screen { background: #f7f1df; }
+.achievement-detail-content { min-height: 100%; padding: 118px 24px calc(var(--mobile-safe-area-height) + 42px); text-align: center; }
+.achievement-detail-art { width: 100%; aspect-ratio: 1; background: transparent; display: grid; place-items: center; overflow: visible; }
+.achievement-detail-art img { width: 88%; height: 88%; object-fit: contain; filter: drop-shadow(0 18px 15px rgba(73,52,23,.2)); }
+.achievement-detail-content.locked .achievement-detail-art { background: transparent; }
+.achievement-detail-content.locked .achievement-detail-art img { filter: grayscale(1) contrast(.82) drop-shadow(0 12px 10px rgba(55,55,50,.12)); opacity: .34; }
+.achievement-detail-copy { padding: 29px 7px 0; }
+.achievement-detail-copy h1 { margin: 0; font-family: "ZCOOL XiaoWei", serif; font-size: 34px; font-weight: 400; letter-spacing: .16em; text-indent: .16em; }
+.achievement-detail-copy > p { max-width: 292px; margin: 17px auto 0; color: var(--muted); font-size: 12px; line-height: 2; letter-spacing: .035em; }
+.achievement-detail-content.locked .achievement-detail-copy h1 { color: rgba(57,55,50,.55); }
+
+.practice-screen { background-color: #eee9e1; background-image: url("/assets/paper/practice-paper.webp"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.practice-header { height: 108px; padding: 62px 27px 10px; grid-template-columns: 74px 1fr 74px; background: transparent; border-bottom: 0; backdrop-filter: none; }
+.mode-copy .practice-header { isolation: isolate; overflow: visible; background: transparent; }
+.mode-copy .practice-header::before { content: ""; position: absolute; z-index: 0; top: 0; left: 0; right: 0; height: 146px; pointer-events: none; background-color: #eee9e1; background-image: url("/assets/paper/practice-paper.webp"); background-size: cover; background-position: center top; background-repeat: no-repeat; -webkit-mask-image: linear-gradient(to bottom, #000 0 70%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0 70%, transparent 100%); }
+.mode-copy .practice-header > * { position: relative; z-index: 1; }
+.practice-header button { width: auto; height: auto; padding: 5px 0; justify-self: start; color: rgba(23,51,44,.82); font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 18px; letter-spacing: .28em; text-indent: .28em; }
+.practice-header > span { justify-self: end; color: rgba(23,51,44,.72); font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 10px; letter-spacing: .08em; white-space: nowrap; }
+.recite-stage { position: absolute; inset: 108px 0 0; overflow: hidden; background: transparent; cursor: pointer; }
+.mode-recite.is-complete .recite-stage { bottom: 176px; }
+.recite-rail { position: absolute; top: 0; left: 27px; right: 27px; will-change: transform; }
+.recite-rail p { height: 92px; margin: 0; display: flex; align-items: center; justify-content: center; text-align: center; color: rgba(23,51,44,.22); font-size: 15px; line-height: 1.75; letter-spacing: .07em; transition: color .38s cubic-bezier(.22,1,.36,1), font-size .38s cubic-bezier(.22,1,.36,1), opacity .38s cubic-bezier(.22,1,.36,1); }
+.recite-rail p.current { color: var(--ink); font-size: 21px; font-weight: 500; }
+.recite-rail p.past { color: rgba(23,51,44,.42); }
+.practice-body-scroll { height: 100%; }
+.full-scripture { min-height: 100%; padding: 137px 30px 150px; background: transparent; }
+.full-scripture p { margin: 0 0 18px; font-size: 17px; line-height: 2.05; letter-spacing: .08em; text-align: center; }
+.photo-preview { width: 100%; max-height: 240px; margin-top: 16px; border-radius: 5px; object-fit: cover; box-shadow: 0 12px 30px rgba(38,52,44,.14); }
+.typing-content { min-height: 100%; padding: 137px 22px calc(188px + var(--keyboard-height)); background: transparent; transition: padding-bottom 220ms ease; }
+.type-sheet { position: relative; min-height: 1040px; }
+.ghost-scripture, .typing-input { position: absolute; inset: 0; width: 100%; min-height: 1040px; margin: 0; padding: 0; border: 0; font-family: "Noto Serif SC", "Songti SC", serif; font-size: 17px; line-height: 2.12; letter-spacing: .08em; text-align: center; white-space: pre-wrap; overflow: hidden; }
+.ghost-scripture { color: rgba(23,51,44,.18); pointer-events: none; }
+.typing-input { resize: none; background: transparent; color: var(--ink); outline: none; caret-color: #9c5337; }
+.practice-footer { position: absolute; z-index: 6; left: 0; right: 0; bottom: 0; min-height: 176px; padding: 10px 24px calc(var(--mobile-safe-area-height) + 82px); background: linear-gradient(180deg, rgba(238,233,225,0), rgba(238,233,225,.38) 48%, rgba(238,233,225,.58) 100%); border-top: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; }
+.mode-copy .practice-footer { isolation: isolate; background: transparent; }
+.mode-copy .practice-footer::before { content: ""; position: absolute; z-index: 0; left: 0; right: 0; bottom: 0; height: 128px; pointer-events: none; background-color: #eee9e1; background-image: url("/assets/paper/practice-paper.webp"); background-size: cover; background-position: center bottom; background-repeat: no-repeat; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 42%); mask-image: linear-gradient(to bottom, transparent 0, #000 42%); }
+.mode-copy .practice-footer > button, .mode-copy .practice-footer > p { position: relative; z-index: 1; }
+.practice-footer p { margin: 0; color: var(--muted); font-size: 9px; letter-spacing: .08em; text-align: center; }
+.text-action, .burn-action { min-width: 164px; height: 46px; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; font-family: "ZCOOL XiaoWei", serif; font-size: 20px; letter-spacing: .18em; text-indent: .18em; }
+.text-action, .burn-action { color: var(--ink); border: 0; }
+.saved-photo { color: var(--jade) !important; display: flex; align-items: center; gap: 6px; }
+.photo-error { margin-top: 5px !important; color: #9c4e3d !important; }
+.photo-input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+
+.ritual-screen { isolation: isolate; background: #050301; color: #f2d99f; }
+.burning-artwork { position: absolute; inset: 0; overflow: hidden; transform-origin: center 62%; }
+.burning-artwork::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(0,0,0,.12), transparent 42%, rgba(0,0,0,.36)), radial-gradient(circle at 50% 62%, transparent 32%, rgba(0,0,0,.34) 100%); }
+.burning-artwork > img, .burning-artwork > video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.ritual-offer-action { position: absolute; z-index: 8; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; color: rgba(255,237,190,.78); cursor: pointer; touch-action: none; user-select: none; }
+.ritual-offer-action span { position: absolute; left: 0; right: 0; bottom: calc(var(--mobile-safe-area-height, 0px) + 56px); font-family: "ZCOOL XiaoWei", serif; font-size: 14px; letter-spacing: .34em; text-indent: .34em; text-shadow: 0 2px 12px rgba(0,0,0,.72); }
+.ritual-offer-action i { position: absolute; left: 25%; right: 25%; bottom: calc(var(--mobile-safe-area-height, 0px) + 40px); height: 1px; background: rgba(255,224,158,.35); transform: scaleX(0); transform-origin: left; }
+.ritual-screen.is-holding .ritual-offer-action i { animation: offering-fill 1.15s linear forwards; }
+@keyframes offering-fill { to { transform: scaleX(1); } }
+.flame-field { position: absolute; z-index: 2; inset: 0; pointer-events: none; overflow: hidden; mix-blend-mode: screen; }
+.burn-glow { position: absolute; left: 8%; right: 8%; bottom: -8%; height: 54%; border-radius: 50%; background: radial-gradient(ellipse at 50% 72%, rgba(255,239,161,.95), rgba(255,146,38,.56) 28%, rgba(184,50,8,.17) 54%, transparent 72%); filter: blur(12px); opacity: 0; animation: burn-glow 3.2s ease-in forwards; }
+.flame { position: absolute; bottom: -9%; width: 34%; height: 61%; border-radius: 52% 48% 24% 76% / 68% 58% 42% 32%; background: radial-gradient(ellipse at 52% 82%, #fff9c7 0 9%, #ffc34f 25%, rgba(255,91,15,.76) 51%, transparent 72%); filter: blur(5px); opacity: 0; transform-origin: 50% 100%; animation: flame-rise 1.22s ease-in-out infinite alternate, flame-enter .55s ease-out forwards; }
+.flame::after { content: ""; position: absolute; inset: 18% 28% 4%; border-radius: 55% 45% 30% 70%; background: linear-gradient(180deg, transparent, rgba(255,255,207,.88)); filter: blur(4px); }
+.flame-one { left: -4%; transform: rotate(-13deg) scale(.9); }
+.flame-two { left: 34%; width: 38%; height: 72%; animation-delay: .08s, 0s; }
+.flame-three { right: -5%; transform: rotate(12deg) scale(.86); animation-delay: .18s, 0s; }
+.burn-char { position: absolute; z-index: 3; inset: 0; background: linear-gradient(180deg, transparent 0 42%, rgba(12,5,1,.22) 57%, rgba(3,2,1,.88) 100%); transform: translateY(55%); animation: char-rise 3.15s cubic-bezier(.55,.02,.52,1) forwards; mix-blend-mode: multiply; }
+.burn-embers { position: absolute; z-index: 5; left: 50%; top: 68%; width: 1px; height: 1px; }
+.burn-embers b { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #ffd372; box-shadow: 0 0 7px #ff9a2f; opacity: 0; animation: ember-flight 2.25s ease-out infinite; }
+.burn-embers b:nth-child(2n) { --ember-x: -92px; animation-delay: .22s; }
+.burn-embers b:nth-child(3n) { --ember-x: 74px; animation-delay: .5s; animation-duration: 1.85s; }
+.burn-embers b:nth-child(4n) { --ember-x: -44px; animation-delay: .78s; }
+.burn-embers b:nth-child(5n) { --ember-x: 116px; animation-delay: 1.02s; animation-duration: 2.5s; }
+@keyframes burn-glow { 0% { opacity: 0; scale: .72; } 35% { opacity: .82; } 100% { opacity: 1; scale: 1.18; } }
+@keyframes flame-enter { to { opacity: .86; } }
+@keyframes flame-rise { 0% { translate: 0 8%; scale: .88 1; rotate: -2deg; } 100% { translate: 0 -7%; scale: 1.08 1.2; rotate: 3deg; } }
+@keyframes char-rise { 0% { transform: translateY(62%); opacity: 0; } 38% { opacity: .35; } 100% { transform: translateY(-12%); opacity: .92; } }
+@keyframes ember-flight { 0% { opacity: 0; transform: translate(0,30px) scale(.4); } 18% { opacity: 1; } 100% { opacity: 0; transform: translate(var(--ember-x, 52px),-340px) scale(.9); } }
+.black-transition { position: absolute; z-index: 9; inset: 0; background: #000; }
+.clear-result { position: absolute; z-index: 12; inset: 0; width: 100%; height: 100%; border: 0; background: #020201; color: #ead39c; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; }
+.clear-result strong { position: relative; z-index: 2; font-family: "ZCOOL XiaoWei", serif; font-size: 43px; font-weight: 400; letter-spacing: .21em; text-indent: .21em; }
+
+.create-dialog-overlay { position: absolute; z-index: 24; inset: 0; box-sizing: border-box; padding: 72px 22px calc(var(--mobile-safe-area-height) + var(--keyboard-height) + 22px); display: grid; place-items: center; background: rgba(10, 19, 16, .47); backdrop-filter: blur(4px); transition: padding-bottom .22s ease; }
+.create-dialog { position: relative; width: min(100%, 342px); overflow: hidden; border: 1px solid rgba(71, 80, 60, .22); border-radius: 7px; background-color: #eee9e1; background-image: linear-gradient(rgba(246,241,228,.78), rgba(246,241,228,.78)), url("/assets/paper/practice-paper.webp"); background-size: cover; background-position: center; color: var(--ink); box-shadow: 0 24px 64px rgba(5,15,11,.28), inset 0 0 0 4px rgba(255,255,255,.18); }
+.create-dialog::before { content: ""; position: absolute; pointer-events: none; inset: 6px; border: 1px solid rgba(54,94,80,.09); }
+.create-dialog-header { position: relative; min-height: 76px; padding: 24px 23px 14px; display: grid; grid-template-columns: 58px 1fr 58px; align-items: center; border-bottom: 1px solid rgba(35,66,56,.13); }
+.create-dialog-header h2 { grid-column: 2; margin: 0; font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 23px; font-weight: 400; letter-spacing: .2em; text-indent: .2em; text-align: center; }
+.create-dialog-header button { grid-column: 3; justify-self: end; padding: 6px 0; border: 0; background: transparent; color: rgba(23,51,44,.65); font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 14px; letter-spacing: .12em; cursor: pointer; }
+.create-scripture-input { position: relative; display: block; box-sizing: border-box; width: calc(100% - 46px); min-height: 190px; max-height: 240px; margin: 0 23px; padding: 20px 2px; resize: none; overflow-y: auto; border: 0; background: transparent; color: var(--ink); outline: none; font-family: "Noto Serif SC", "Songti SC", serif; font-size: 14px; line-height: 2; letter-spacing: .055em; }
+.create-scripture-input::placeholder { color: rgba(23,51,44,.38); }
+.create-dialog-actions { position: relative; height: 58px; display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid rgba(35,66,56,.13); }
+.upload-action, .save-action { position: relative; border: 0; border-radius: 0; background: transparent; color: var(--ink); display: grid; place-items: center; font-family: "ZCOOL XiaoWei", "STKaiti", serif; font-size: 16px; letter-spacing: .14em; text-indent: .14em; cursor: pointer; }
+.save-action::before { content: ""; position: absolute; left: 0; top: 15px; bottom: 15px; width: 1px; background: rgba(35,66,56,.14); }
+.upload-action:active, .save-action:active { background: rgba(54,94,80,.055); }
+.save-action:disabled { color: rgba(23,51,44,.28); cursor: default; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

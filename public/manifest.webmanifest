@@ -1,0 +1,28 @@
+{
+  "id": "/",
+  "name": "心斋",
+  "short_name": "心斋",
+  "description": "诵持、临经与默录。诵一卷经，留一刻静。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f4e9",
+  "theme_color": "#f7f4e9",
+  "categories": ["lifestyle", "books"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
